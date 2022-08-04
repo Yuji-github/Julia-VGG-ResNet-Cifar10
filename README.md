@@ -31,6 +31,9 @@ To avoid the situation, you should turn off the terminal and make sure there is 
 
 ## 3. Results
 
+### Environment
+NVIDIA GeForce GTX 1060 GPU, 6GB GDDR5 RAM, 16GB LPDDR3 RAM, Intel Core i7-8650U quad-core @ 1.9 to 4.2 GHz
+
 In comparison with Python and Julia, those results are obtained from Google Collab and from personal computers.<br>
 On GPU, the same hardware and software configurations were used for all models.<br>
 Results presented refer to both test and training accuracy and loss scores.<br>
