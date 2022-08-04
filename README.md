@@ -31,7 +31,7 @@ To avoid the situation, you should turn off the terminal and make sure there is 
 
 ## 3. Results
 
-In comparison with Python and Julia, those results are obtained from Google Collab and from personal computers.<br>
+In comparison with Python and Julia, those results are obtained from personal computers.<br>
 On GPU, the same hardware and software configurations were used for all models.<br>
 Results presented refer to both test and training accuracy and loss scores.<br>
 
