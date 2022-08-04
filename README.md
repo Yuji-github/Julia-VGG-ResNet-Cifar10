@@ -27,3 +27,4 @@ Q. Why does Julia provide OOM?<br>
 A. This is due to Just-In-Time compilation.<br>
 When you train a model in Julia, each time Julia leaves a cache on your GPU. Thus, the GPU is getting heavier and slower.<br>
 To avoid the situation, you should turn off the terminal and make sure there is no cache left on your GPU.
+<img src="./src/oom.png" alt="julia oom" title="Julia oom"><br>
