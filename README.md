@@ -17,7 +17,7 @@ The bottleneck of deep learning, which involves large-scale architectures, is tr
 ## 2. Julia Aspects
 Q. Is the first run slow?<br>
 A. Yes, it will be slow because Julia transfers all of the data to a local GPU.<br>
-The below picture shows that the first epoch takes 95 seconds due to the trandering.
+The below picture shows that the first epoch takes 95 seconds due to the transfering.
 <img src="./src/julia1.png" alt="Julia epoch1" title="Julia epoch1"><br>
 Then, the second run will be quicker, but the speed depends on your GPU environment.<br>
 In our case, Julia redcued the time 9 times from the first epoch.
