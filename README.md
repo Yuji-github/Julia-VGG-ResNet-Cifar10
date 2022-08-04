@@ -12,13 +12,18 @@ The bottleneck of deep learning, which involves large-scale architectures, is tr
 - MLDatasets ==> 0.5.11
 - Plots ==> 1.21.2
 
-* Julia cares for packages' version. If you see any errors, please make sure the versions are correct.
+*Julia cares for packages' version. If you see any errors, please make sure the versions are correct.
 
 ## 2. Julia Aspects
 Q. Is the first run slow?<br>
 A. Yes, it will be slow because Julia transfers all of the data to a local GPU.<br>
 The below picture shows that the first epoch takes 95 seconds due to the trandering.
-<img src="./src/julia1.png" alt="Julia epoch1" title="Julia epoch1">
+<img src="./src/julia1.png" alt="Julia epoch1" title="Julia epoch1"><br>
 Then, the second run will be quicker, but the speed depends on your GPU environment.<br>
 In our case, Julia redcued the time 9 times from the first epoch.
-<img src="./src/epoch2.png" alt="Julia epoch2" title="Julia epoch2">
+<img src="./src/epoch2.png" alt="Julia epoch2" title="Julia epoch2"><br>
+
+Q. Why does Julia provide OOM?<br>
+A. This is due to Just-In-Time compilation.<br>
+When you train a model in Julia, each time Julia leaves a cache on your GPU. Thus, the GPU is getting heavier and slower.<br>
+To avoid the situation, you should turn off the terminal and make sure there is no cache left on your GPU.
