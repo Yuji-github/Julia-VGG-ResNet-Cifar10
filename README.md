@@ -34,9 +34,9 @@ To avoid the situation, you should turn off the terminal and make sure there is 
 ### VGG16
 | Language | Epoch | Time (seconds) | Train Accuracy | Train Loss | Test Accuracy | Test Loss |
 |:-----|:--------:|:------:|:-----:|:--------:|:------:|------:|
-Julia    & 5     & 33.721         & 0.758          & 0.682      & 0.714         & 0.827     \\ \hline
-Julia    & 45    & 33.664         & 0.971          & 0.086      & 0.766         & 1.354     \\ \hline
-Julia    & 50    & 33.695         & 0.991          & 0.027      & 0.787         & 1.216     \\ \hline
-Python   & 5     & 30             & 0.726          & 0.799      & 0.580         & 1.254   \\ \hline
-Python   & 45    & 29             & 0.974          & 0.078      & 0.750         & 1.261    \\ \hline
-Python   & 50    & 29             & 0.976          & 0.074      & 0.756         & 1.214     \\ \hline
+|Julia    | 5     | 33.721         |  0.758          | 0.682      | 0.714         | 0.827     |
+|Julia    | 45    | 33.664         | 0.971          | 0.086      | 0.766         | 1.354    |
+|Julia    | 50    | 33.695         | 0.991          | 0.027      | 0.787         | 1.216     |
+|Python   | 5     | 30             | 0.726          | 0.799      | 0.580         | 1.254   |
+|Python   | 45    | 29             | 0.974          | 0.078      | 0.750         | 1.261    |
+|Python   | 50    | 29             | 0.976          | 0.074      | 0.756         | 1.214    |
