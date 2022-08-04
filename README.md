@@ -31,6 +31,10 @@ To avoid the situation, you should turn off the terminal and make sure there is 
 
 ## 3. Results
 
+In comparison with Python and Julia, those results are obtained from Google Collab and from personal computers.<br>
+On GPU, the same hardware and software configurations were used for all models.<br>
+Results presented refer to both test and training accuracy and loss scores.<br>
+
 ### VGG16
 | Language | Epoch | Time (seconds) | Train Accuracy | Train Loss | Test Accuracy | Test Loss |
 |:-----|:--------:|:------:|:-----:|:--------:|:------:|------:|
@@ -50,3 +54,8 @@ To avoid the situation, you should turn off the terminal and make sure there is 
 |Python   | 5     | 30             | 0.726          | 0.799      | 0.580         | 1.254   |
 |Python   | 45    | 29             | 0.974          | 0.078      | 0.750         | 1.261    |
 |Python   | 50    | 29             | 0.976          | 0.074      | 0.756         | 1.214    |
+
+You can see that the Julia model performed slightly better in terms of loss and accuracy scores than the Python equivalent. Additionally, Julia was approximately 10 seconds faster per epoch iteration. This is likely attributed to the usage of CUDA arrays in Julia. Variables can be moved onto the GPU before training. Alternatively, Python moves variables back and forth from the CPU to the GPU during each epoch. As a result, Julia uses variables more efficiently. Overall, there was no significant difference found between the two models.
+
+## 4. Future Study
+Julia performs better than Python when we use VGG for cifer10. However, Julia did not differentiate from Python when it used ResNet18. We assume that the transferred data on the GPU, including ResNet18, is slightly larger to optimize Julia's performance. Thus, we need a better GPU to maxmize the performance.
